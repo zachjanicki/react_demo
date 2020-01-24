@@ -1,12 +1,10 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import TopStories from './components/TopStories';
 import StoryComments from './components/StoryComments';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const [clickCount, setClickCount] = React.useState(0);
   
   return (
     <main>

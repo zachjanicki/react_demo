@@ -31,6 +31,9 @@ function StoryComments() {
 		} else {
 			return commentData.map((comment) => {
 				const dangerousHTML = {__html: comment.text}
+				// dangerously setting inner html here because the hacker news api 
+				// gives html in their comments
+				// this is dangerous
 				return (
 					<Card>
 						<Author>

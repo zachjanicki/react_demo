@@ -20,9 +20,8 @@ function TopStories() {
 
 	function displayStories(storyData) {
 		if (storyData === null) {
-			console.log("ITS NULL YOU IDIOT");
+			return null;
 		} else {
-			console.log(storyData);
 			return storyData.map((story) =>
 				(
 					<Card>
